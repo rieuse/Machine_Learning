@@ -1,6 +1,5 @@
 import json
 import re
-
 import requests
 import time
 from lxml import  etree
@@ -19,7 +18,7 @@ headers = {
 }
 
 def get_house_data():
-    for num in range(241, 307):
+    for num in range(1, 307):
         url = f'https://bj.5i5j.com/ershoufang/chaoyangqu/n{num}/'
         print(url)
         s = requests.session()
