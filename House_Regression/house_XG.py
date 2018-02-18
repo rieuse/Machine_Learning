@@ -25,11 +25,16 @@ test_score_mean = np.mean(test_score, axis=1)
 plt.plot(train_sizes, train_score_mean, 'o-', color="r",
          label="Training")
 plt.plot(train_sizes, test_score_mean, 'o-', color="g",
-        label="Cross-validation")
+        label="validation")
 
 plt.xlabel("Training examples")
 plt.ylabel("Score")
 plt.show()
+
+
+
+
+
 
 
 # scores = []
