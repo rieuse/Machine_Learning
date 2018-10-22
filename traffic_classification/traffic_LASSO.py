@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -40,7 +38,6 @@ y_train = train.pop('Evaluation')
 clf = LogisticRegression(penalty='l1', C=1.0 ,random_state=0)
 clf.fit(train, y_train)
 y_pred = clf.predict_proba(test)[:, 1]
-
 
 # 输出预测结果至my_LASSO_prediction.csv
 submit['Evaluation'] = y_pred
